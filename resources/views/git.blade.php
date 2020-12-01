@@ -30,6 +30,12 @@
              cursor: pointer;
          }
 
+         .exp{
+             background-color: #ffe7de;
+             width: 400px;
+             height: 100px;
+         }
+
     </style>
 
 </head>
@@ -209,6 +215,7 @@
             <td></td>
 
         </tr>
+        <br>
         <tr>
 
             <td width="50px">
@@ -362,7 +369,6 @@
                 @{{ 'fetch' | caps }} <br>
                 <div class="" v-if="!openLay.fetch">
                     git fetch - Загрузить объекты и ссылки из другого репозитория <br>
-                    <br>
                 </div>
             </td>
             <td></td>
@@ -411,6 +417,16 @@
                 <div class="" v-if="!openLay.config">
                     git config - Первоначальная настройка Git <br>
                     <br>
+
+                    <i>--list -  показать список всех настроек</i> <br>
+                    <i>--system - Системные настройки (/etc/.gitconfig)</i><br>
+                    <i>--global - Глобальные настройки (~/.gitconfig)</i><br>
+                    <i>--local - Локальные настройки (<b>ProjectName</b>/.gitconfig)</i><br>
+
+                    <div class="exp">
+                        <b>git config --global --list</b>
+                    </div>
+
                 </div>
             </td>
             <td></td>
